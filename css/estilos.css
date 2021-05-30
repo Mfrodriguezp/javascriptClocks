@@ -1,13 +1,15 @@
 .fecha,.hora_minuto_segundo{
     border:1px solid #000;
-    height: 100px;
-    width: 300px;
+    height: 120px;
+    width: 500px;
     margin: 15px auto;
 }
 
-.dia,.mes,.fullyear{
-    height: 100px;
-    width: 96px;
- background: blue;
- display: inline-block;
+.dia,.dia_numero,.mes,.fullyear{
+    height: 106px;
+    width: 110px;
+    background: blue;
+    display: inline-block;
+    margin: 7.5px;
+    text-align: center;
 }
