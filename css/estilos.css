@@ -1,0 +1,6 @@
+.fecha,.hora_minuto_segundo{
+    border:1px solid #000;
+    height: 100px;
+    width: 300px;
+    margin: 15px auto;
+}
