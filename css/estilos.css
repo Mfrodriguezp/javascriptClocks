@@ -4,3 +4,10 @@
     width: 300px;
     margin: 15px auto;
 }
+
+.dia,.mes,.fullyear{
+    height: 100px;
+    width: 96px;
+ background: blue;
+ display: inline-block;
+}
