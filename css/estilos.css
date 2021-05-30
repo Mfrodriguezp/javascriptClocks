@@ -5,7 +5,7 @@
     margin: 15px auto;
 }
 
-.dia,.dia_numero,.mes,.fullyear{
+.dia,.dia_numero,.mes,.fullyear,.hora,.minuto,.segundo,.am_pm{
     height: 106px;
     width: 110px;
     background: blue;
