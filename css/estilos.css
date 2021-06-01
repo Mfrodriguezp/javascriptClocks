@@ -1,6 +1,7 @@
 body{
     background: url("../images/bgClock.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
