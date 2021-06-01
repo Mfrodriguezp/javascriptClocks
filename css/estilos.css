@@ -40,3 +40,15 @@ body{
     font-size: 25px;
     color: beige;
 }
+
+footer{
+    background: #000;
+    color: beige;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
