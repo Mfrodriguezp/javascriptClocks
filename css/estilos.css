@@ -1,15 +1,42 @@
-.fecha,.hora_minuto_segundo{
-    border:1px solid #000;
-    height: 120px;
-    width: 500px;
-    margin: 15px auto;
+body{
+    background: url("../images/bgClock.jpg");
+    background-size: cover;
 }
 
-.dia,.dia_numero,.mes,.fullyear,.hora,.minuto,.segundo,.am_pm{
-    height: 106px;
-    width: 110px;
-    background: blue;
-    display: inline-block;
-    margin: 7.5px;
+.container{
+    background:rgba(250, 250, 250, 0.747);
+    width: 450px;
+    height: 230px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: #78A15D 5px 5px;
+}
+
+.fecha{
+    border:1px solid #000;
+    height: 90px;
+    width: 400px;
+    margin:15px auto;
     text-align: center;
+    background: #242322;
+    border-radius:20px 20px 0px 0px;
+}
+
+.hora_minuto_segundo{
+    border:1px solid #000;
+    height: 90px;
+    width: 400px;
+    margin:15px auto;
+    text-align: center;
+    background: #242322;
+    border-radius:0px 0px 0px 20px;
+}
+
+.dia,.dia_numero,.mes,.fullyear,.hora,.minuto,.segundo,.puntos_separacion,.am_pm{
+    text-align: center;
+    display: inline-block;
+    margin:30px auto;
+    font-size: 25px;
+    color: beige;
 }
