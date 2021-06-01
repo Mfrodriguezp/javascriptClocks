@@ -1,5 +1,5 @@
 function reloj_javascript() {
-    let dato_fecha = new Date; //objeto de fecha y hora
+let dato_fecha = new Date; //objeto de fecha y hora
 const nombresDiasSemana=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
 const meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre",
 "noviembre","diciembre"];
@@ -27,27 +27,31 @@ let segundo=dato_fecha.getSeconds();
     html_dia_numero.innerHTML=dia_numero + " de";
     html_mes.innerHTML=mes + " del";
     html_anio.innerHTML=anio;
-    if (hora<=12) {
+    /*Formateo para hora*/
+    if (hora<10) {
         html_hora.innerHTML="0"+hora;
-    }else{
-        html_hora.innerHTML=hora-12;
+    }if(hora>9 || hora<13){
+        html_hora.innerHTML=hora;
+    }if (hora >12) {
+        html_hora.innerHTML="0"+(hora-12);
+        html_am_pm.innerHTML="PM";
+    } else {
+        html_am_pm.innerHTML="AM";
     }
+    /*Formateo para minutos */
     if (minuto<10) {
         html_minuto.innerHTML="0"+minuto;
     }else{
         html_minuto.innerHTML=minuto;
     }
+    /*Formateo para Segundos */
     if (segundo<10) {
         html_segundo.innerHTML="0"+segundo;
     }else{
         html_segundo.innerHTML=segundo;
-    }
-    if (hora >12) {
-        html_am_pm.innerHTML="PM";
-    } else {
-        html_am_pm.innerHTML="AM";
     }   
 }
+
 
 reloj_javascript();
 let invervalo = setInterval(reloj_javascript,1000);
